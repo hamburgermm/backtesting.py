@@ -1134,6 +1134,7 @@ class Backtest:
         self._strategy = strategy
         self._results: Optional[pd.Series] = None
 
+
     def run(self, **kwargs) -> pd.Series:
         """
         Run the backtest. Returns `pd.Series` with results and statistics.
