@@ -1133,11 +1133,7 @@ class Backtest:
         )
         self._strategy = strategy
         self._results: Optional[pd.Series] = None
-        self._cash = cash
 
-    @property
-    def cash(self) -> float:
-        return self._cash
 
     def run(self, **kwargs) -> pd.Series:
         """
